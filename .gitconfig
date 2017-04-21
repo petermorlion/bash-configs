@@ -5,6 +5,7 @@
 	default = simple
 [core]
 	editor = vim
+	excludesfile = /home/petermorlion/.gitignore_global
 [alias]
         co = checkout
         br = branch
