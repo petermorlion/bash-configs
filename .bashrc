@@ -138,4 +138,4 @@ unset env
 
 alias mc="mc -x" #Start Midnight Commander with mouse support"
 alias projects="cd /mnt/c/Users/peter/Projects"
-
+alias gitflowpush="git co develop;git push;git co master;git push;git push --tags"
