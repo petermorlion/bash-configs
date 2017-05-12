@@ -139,3 +139,7 @@ unset env
 alias mc="mc -x" #Start Midnight Commander with mouse support"
 alias projects="cd /mnt/c/Users/peter/Projects"
 alias gitflowpush="git co develop;git push;git co master;git push;git push --tags"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
