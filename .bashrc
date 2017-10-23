@@ -57,7 +57,7 @@ color_prompt=
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]$(__git_ps1)\[\033[00m\] \$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[01;33m\]$(__git_ps1)\[\033[00m\] \$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1) \$ '
 fi
@@ -137,7 +137,7 @@ fi
 unset env
 
 alias mc="mc -x" #Start Midnight Commander with mouse support"
-alias projects="cd /mnt/c/Users/peter/Projects"
+alias projects="cd /mnt/c/Users/Peter/Projects"
 alias gitflowpush="git co develop;git push;git co master;git push;git push --tags"
 
 export NVM_DIR="$HOME/.nvm"
