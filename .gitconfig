@@ -6,10 +6,11 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
+	fscache = true
 [alias]
         co = checkout
         br = branch
         st = status
-        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+        hist = log --pretty=format:\"%C(yellow)%h%C(reset) %ad | %s%C(green)%d%C(reset) [%C(magenta)%an%C(reset)]\" --graph --date=short
 [pull]
-        rebase = true
+	rebase = true
