@@ -161,3 +161,6 @@ export DB_URI=mongodb://127.0.0.1:27017
 
 # Switch to home
 cd ~/
+
+#Oh-my-posh
+eval "$(oh-my-posh init bash)"
