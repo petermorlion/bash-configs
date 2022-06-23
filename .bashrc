@@ -163,4 +163,4 @@ export DB_URI=mongodb://127.0.0.1:27017
 cd ~/
 
 #Oh-my-posh
-eval "$(oh-my-posh init bash)"
+eval "$(oh-my-posh init bash --config ~/.poshthemes/paradox.omp.json)"
