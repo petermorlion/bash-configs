@@ -63,10 +63,10 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# If this is an xterm set the title to user@host:dir
+# If this is an xterm set the title to current directory
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\W\a\]$PS1"
     ;;
 *)
     ;;
@@ -145,9 +145,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export DOCKER_HOST=tcp://localhost:2375
-
-# Mongo db uri for accuradio
-export DB_URI=mongodb://127.0.0.1:27017
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
